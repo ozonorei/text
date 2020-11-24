@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    
+    margin: 0 auto;
+    max-width: 1024px;
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+}
+.header{
+    
+    position: relative;
+}
+
+.img{
+    max-width: 100%;
+    position: absolute;
+    right:0;
+    height: auto;
+
+}
+
+.header ul{
+    position:absolute;
+    top: 130px;
+    left: 50px;
+    color: gainsboro;
+}
+
+.header a{
+    text-decoration:none;
+    color: gainsboro;
+}
+
+span{
+    font-size: 30px;
+    letter-spacing: 15px;
+    
+}
+
+.name{
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+
+.header li {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.header .cook{
+    padding-bottom: 10px;
+}
+
+.header li a{
+    text-decoration: none;
+    color: gainsboro;
+    font-weight: lighter; 
+    display: inline-block;
+}
+
+.header .cook::after{
+    content:'';
+    display:block;
+    width: 0;
+    height: 2px;
+    background: silver	;
+    transition: width .3s;
+
+}
+
+.header .cook:hover::after{
+    width: 100%;
+    transition: width .3s;
+    cursor: pointer;
+}
+
+.style{
+    letter-spacing: 10px;
+    line-height:50px;
+    font-size: 50px;
+    
+}
+
+.container{
+    padding:30px;
+    background: whitesmoke;
+}
+.content{
+    padding: 30px;
+    
+}
+
+.footer{
+    position: relative;
+    background: #cdcdcd;
+    height: 180px;
+}
+
+.footer h2{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 18px;
+    letter-spacing: 16px;
+}
+
+.endtext{
+    position:absolute;
+    left: 50%;
+    bottom: 10px;
+    text-decoration:none;
+}
+
+
+
+.footer_menu_group a{
+    text-decoration:none;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 0 0 0 20px;
+    border-left: 1px solid #666;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    
+    
+}
+.footer_menu_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    line-height: 2.0;
+    max-width: 450px;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+.footer a {
+    color: #666;
+}
+
+
+
+.menu >li{
+    
+    display: block;
+    width:150px;
+}
+
+.menu ul{
+    display: none;
+
+}
+/*
+.menu a:hover,.menu a.active{
+    background: gray;
+}
+*/
+
+.dropdown-open li{
+    
+    margin-left: 80px;
+    font-weight: bold;
+    
+}
+
+.dropdown ul{
+    
+    position: absolute;
+    top:100px;
+    left:50px;
+}
+
+.swiper-container {
+	width: 400px;
+	height: 400px;
+}
+
+.top a{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   
+}
+
+.top img{
+    border-radius: 100px;
+}
